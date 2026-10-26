@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Mentor AI</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💸 Money Mentor AI</h1>
+            <p>Your AI-powered financial guide</p>
+        </header>
+
+        <section class="input-section">
+            <div class="input-group">
+                <input type="text" id="expenseInput" placeholder="e.g., Spent ₹250 on coffee via UPI">
+                <button onclick="submitExpense()">Log Expense</button>
+            </div>
+            <div id="aiReply" class="ai-reply"></div>
+        </section>
+
+        <div class="dashboard">
+            <section class="card">
+                <h2>📊 Budget Status</h2>
+                <div id="budgetContainer"></div>
+            </section>
+
+            <section class="card">
+                <h2>📜 Recent Expenses</h2>
+                <ul id="expenseList"></ul>
+            </section>
+        </div>
+
+        <section class="report-section">
+            <button class="btn-report" onclick="getReport()">Generate Health Report</button>
+            <div id="reportContainer" class="report-card hidden"></div>
+        </section>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+.env
+money_mentor.db
+__pycache__/
+*.py[cod]
+.venv/
+venv/
