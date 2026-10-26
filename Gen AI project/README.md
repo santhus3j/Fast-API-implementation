@@ -54,11 +54,7 @@ Money Mentor is an AI-powered personal expense tracker that transforms casual te
    Open `http://127.0.0.1:8000/static/index.html` in your browser.
 
 ## 📈 CI/CD Pipeline
-The project uses GitHub Actions for continuous integration. On every push to the `main` branch, the pipeline:
-- Sets up a Python environment.
-- Installs dependencies.
-- Runs static analysis/linting (if configured).
-- Ensures the app builds correctly.
+The GitHub Actions workflow at `.github/workflows/main.yml` runs on changes to this project and on pull requests to `main`. It installs the Python dependencies, checks Python syntax, and validates the frontend JavaScript syntax. The checks do not require a Gemini API key or a running Ollama service.
 
 ## 📄 License
 MIT License
